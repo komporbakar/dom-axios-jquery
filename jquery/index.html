@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h1>Halo Dunia</h1>
+    <ul id="lokasi">
+        <li>jogja</li>
+        <li class="bpn">balikpapan</li>
+        <li>smd</li>
+        <button id="tap">keke</button>
+    </ul>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            const jkt = $('<li>Jakarta</li>')
+            const judul = $('<h2>Judul</h2>')
+            $('#lokasi').append(jkt);
+            $('#lokasi').before(judul);
+            console.log($('.bpn').text());
+
+            $('#tap').on('click', function () {
+                alert('GG Geming')
+            })
+
+        })
+    </script>
+</body>
+
+</html>
